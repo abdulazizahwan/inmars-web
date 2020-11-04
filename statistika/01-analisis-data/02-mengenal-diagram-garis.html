@@ -14,11 +14,24 @@
 
     <div class="container pt-4">
         <h5 class="span-bold">Ayo Kita Amati</h5>
-        <p>Sebelumnya kita telah mengenal diagram batang. Pada kegiatan kali ini kita akan belajar bagaimana membaca data yang disajikan dengan diagram garis.<br><br>Mari perhatikan diagram garis yang terdapat di Puskesmas Desa Suka Makmur berikut ini.</p>
+        <p>Sebelumnya kita telah mengenal diagram batang. Pada kegiatan kali ini kita akan belajar bagaimana membaca
+            data yang disajikan dengan diagram garis.<br><br>Mari perhatikan diagram garis yang terdapat di Puskesmas
+            Desa Suka Makmur berikut ini.</p>
 
         <canvas id="myChart" width="400" height="400"></canvas>
 
-        <p class="mt-4">Diagram di atas menunjukkan bahwa pada tahun 2001 terdapat 7 kelahiran, tahun 2002 sebanyak 10 kelahiran, dan seterusnya.Temukan juga keterangan- keterangan lain yang dapat kalian peroleh dari diagram di atas. <span class="span-italic">(Kalian bisa menekan titik-titik pada koordinat untuk mengetahui jumlah kelahiran masing-masing tahun)</span></p>
+        <p class="mt-4">Diagram di atas menunjukkan bahwa pada tahun 2001 terdapat 7 kelahiran, tahun 2002 sebanyak 10
+            kelahiran, dan seterusnya.<span class="span-italic"> (Kalian bisa menekan titik-titik pada koordinat untuk
+                mengetahui jumlah kelahiran masing-masing tahun)</span> <br> <br>Temukan juga keterangan- keterangan
+            lain yang dapat kalian peroleh dari diagram di atas.</p>
+
+        <ol>
+            <li>Tentukan banyak kelahiran pada tahun 2003, 2004, dan seterusnya.</li>
+            <li>Pada tahun berapakah jumlah kelahiran paling tinggi? Pada tahun berapakah jumlah kelahiran paling rendah?</li>
+            <li>Berdasarkan grafik tersebut, perkirakan dan jelaskan banyak kelahiran pada tahun 2005.</li>
+            <li>Apa pendapat kalian tentang program Keluarga Berencana di desa tersebut?</li>
+            <li>Pada tahun 2008 terdapat 25 kelahiran. Dapatkah kita simpulkan bahwa pada tahun 2008 penduduk Desa Suka Makmur bertambah 25 orang dibandingkan tahun 2007?</li>
+        </ol>
 
     </div>
 
@@ -28,7 +41,7 @@
         var myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['2001', '2002','2003', '2004', '2005', '2006', '2007', '2008'],
+                labels: ['2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008'],
                 datasets: [{
                     label: 'Banyak Bayi Lahir',
                     data: [7, 10, 13, 17, 20, 22, 24, 25],
