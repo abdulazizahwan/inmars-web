@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Mengenal Diagram Garis</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Ayo Kita Amati</h5>
+        <p>Sebelumnya kita telah mengenal diagram batang. Pada kegiatan kali ini kita akan belajar bagaimana membaca data yang disajikan dengan diagram garis.<br><br>Mari perhatikan diagram garis yang terdapat di Puskesmas Desa Suka Makmur berikut ini.</p>
+
+        <canvas id="myChart" width="400" height="400"></canvas>
+
+        <p class="mt-4">Diagram di atas menunjukkan bahwa pada tahun 2001 terdapat 7 kelahiran, tahun 2002 sebanyak 10 kelahiran, dan seterusnya.Temukan juga keterangan- keterangan lain yang dapat kalian peroleh dari diagram di atas. <span class="span-italic">(Kalian bisa menekan titik-titik pada koordinat untuk mengetahui jumlah kelahiran masing-masing tahun)</span></p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2001', '2002','2003', '2004', '2005', '2006', '2007', '2008'],
+                datasets: [{
+                    label: 'Banyak Bayi Lahir',
+                    data: [7, 10, 13, 17, 20, 22, 24, 25],
+                    backgroundColor: [
+                        'rgb(0, 48, 73)',
+                        'rgb(214, 40, 40)',
+                        'rgb(247, 127, 0)',
+                        'rgb(58, 134, 255)',
+                        'rgb(255, 0, 110)',
+                        'rgb(46, 196, 182)',
+                        'rgb(114, 9, 183)',
+                        'rgb(69, 123, 157)'
+                    ],
+                    fill: false,
+                }],
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            precision: 0,
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Jumlah Kelahiran tiap Tahun di Desa Suka Makmur'
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
