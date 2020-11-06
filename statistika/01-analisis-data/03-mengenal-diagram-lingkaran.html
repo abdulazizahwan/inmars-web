@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Mengenal Diagram Garis</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Ayo Kita Amati</h5>
+        <p>Sebelumnya kita telah mengenal diagram garis. Pada kegiatan kali ini kita akan belajar bagaimana menganalisis data yang disajikan dengan diagram lingkaran atau pie<br><br>Mari perhatikan diagram lingkaran yang terdapat di Laptop Reta</p>
+
+        <canvas id="myChart" width="400" height="400"></canvas>
+
+        <p class="mt-4">Diagram lingkaran di atas menunjukkan file yang terdapat di dalam flashdisk milik Reta yang berkapasitas 4 GB (setara dengan 4.000 MB). Flashdisk tersebut diisi dengan file musik, foto, data buku ajar matematika, dan data lainnya.</p>
+
+        <ol>
+            <li>Jika Reta ingin menambahkan file data buku ajar baru yang berkapasitas 750 MB, apakah kapasitas flashdisk milik Reta masih mencukupi? Jelaskan.</li>
+            <li>Jika Reta tidak ingin menghapus file foto, file data buku ajar, dan file data lainnya di flashdisknya, berapa persen dari keseluruhan file musik yang harus dihapus agar data buku ajar baru dapat ditambahkan ke dalam flashdisk?</li>
+        </ol>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Data Buku', 'Foto', 'Musik', 'Kosong', 'Lainnya'],
+                datasets: [{
+                    label: 'Persentase data',
+                    data: [40, 20, 20, 10, 10],
+                    backgroundColor: ['#e91e63', '#00e676', '#ff5722', '#1e88e5', '#ffd600']
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Data Flashdisk',
+                    position: 'top',
+                    fontSize: 16,
+                    fontColor: '#333',
+                    padding: 20
+                },
+                legend: {
+                    display: false,
+                },
+                plugins: {
+                    datalabels: {
+                        color: '#333',
+                        textAlign: 'center',
+                        font: {
+                            lineHeight: 1.6
+                        },
+                        formatter: function (value, ctx) {
+                            return ctx.chart.data.labels[ctx.dataIndex] + '\n' + value + '%';
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    </script>
+</body>
+
+</html>
