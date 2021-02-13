@@ -13,3 +13,7 @@ body {
 .span-italic {
     font-style: italic;
 }
+
+caption {
+    caption-side: top;
+}
