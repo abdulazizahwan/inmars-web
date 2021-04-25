@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+    <title>Apa itu Rata-Rata?</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Pengertian Rata-rata</h5>
+
+        <div id="ggb-element">
+
+        </div>
+    </div>
+
+
+    <script>
+        var ggbApp = new GGBApplet({
+            "appName": "geometry",
+            "width": 1000,
+            "height": 600,
+            "showToolBar": false,
+            "showAlgebraInput": false,
+            "showMenuBar": false,
+            "border": "#ffffff",
+            "material_id": "hztkg7m8"
+        }, true);
+        window.addEventListener("load", function () {
+            ggbApp.inject('ggb-element');
+        });
+    </script>
+
+</body>
+
+</html>
