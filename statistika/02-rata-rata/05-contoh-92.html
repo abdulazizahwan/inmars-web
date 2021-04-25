@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Contoh 9.2</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Contoh 9.2</h5>
+        <p>Tabel di bawah menunjukkan nomor sepatu anak yang mewakili sekolah dalam ajang pekan olahraga di kabupaten.
+        </p>
+        <img src="/assets/img_tabel_contoh_92.png" class="img-fluid" alt="Tabel Contoh 92">
+
+        <ol type="a">
+            <li>Tentukan nilai yang dapat memengaruhi nilai rata-rata.</li>
+            <li>Tentukan rata-rata dengan dan tanpa nilai dari poin a.</li>
+        </ol>
+
+        <p>
+            <a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Alternatif Penyelesaian
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <ol type="a">
+                    <li>Berdasarkan data dalam tabel, kita bisa mengetahui nilai yang dapat memengaruhi nilai rata-rata
+                        dengan membuat plot data seperti berikut.</li>
+                    <img src="/assets/img_penyelesaian_contoh_92_a.png" class="img-fluid" alt="Tabel Contoh 92">
+
+                    <p>Nomor sepatu yang berukuran 28 jauh lebih kecil dibandingkan dengan ukuran sepatu lainnya. Jadi,
+                        nomor sepatu berukuran 28 adalah data yang dapat memengaruhi rata-rata.</p>
+
+
+                    <li>Rata-rata dengan data 28</li>
+                    <img src="/assets/img_penyelesaian_contoh_92_b_1.png" class="img-fluid" alt="Tabel Contoh 92">
+                    <p>Rata-rata tanpa data 28</p>
+                    <img src="/assets/img_penyelesaian_contoh_92_b_2.png" class="img-fluid" alt="Tabel Contoh 92">
+                    <p>Perhatikan bahwa rata-rata dengan dan tanpa megikutsertakan 28 dalam kumpulan data memiliki nilai
+                        yang berbeda. Sehingga, rata-rata tanpa nilai 28 lebih baik untuk menyatakan nomor sepatu.</p>
+
+                </ol>
+            </div>
+        </div>
+
+    </div>
+    <script src="/bootstrap/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
