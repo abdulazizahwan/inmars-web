@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Contoh 9.7</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Contoh 9.7</h5>
+        <p>Tentukan mean, median, dan modus dari data berikut.
+        </p>
+
+        <div class="table-responsive-sm">
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" class="bg-primary text-white">Nilai</th>
+                        <td>55</td>
+                        <td>60</td>
+                        <td>65</td>
+                        <td>70</td>
+                        <td>75</td>
+                        <td>80</td>
+                        <td>85</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="bg-primary text-white">Frekuensi</th>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <p>
+            <a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Alternatif Penyelesaian
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <img src="/assets/img_penyelesaian_contoh_97_1.png" class="img-fluid"
+                    alt="Penyelesaian Contoh 9.6 Poin Mean">
+                <br>
+                <p>Untuk menentukan median data di atas, kita akan kesulitan untuk mengurutkan data dari yang terkecil hingga data terbesar. Perhatikan terlebih dahulu jumlah frekuensi, yakni menyatakan banyak data.
+                </p>
+
+                <p>Karena banyak data (jumlah frekuensi) ganjil, yakni 45, maka median terletak pada data yang $$\ ke- \frac{45+1}{2}$$ atau data \(ke-23\). <br><br> Data \(ke-23\) adalah \(70\).</p>
+
+                <p>Jadi, \(mediannya\) adalah \(70\). \(Modus\) data adalah \(80\).</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/bootstrap/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- MathJax for Math Equation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+                  TeX: {extensions: ["AMSmath.js","AMSsymbols.js","mhchem.js","noErrors.js","noUndefined.js"]},
+                  tex2jax: {
+                      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                      processEscapes: true
+                    },
+                });
+        </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Ayo Kita Amati</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Ayo Kita Amati</h5>
+
+        <p>Coba kita amati data berat badan 9 siswa laki-laki kelas VIII D SMP Ceria berikut ini (dalam kg).</p>
+        <div class="table-responsive-sm">
+            <table class="table table-hover table-bordered">
+                <caption><strong>Tabel</strong> data berat badan siswa sebelum diurutkan</caption>
+                <tbody>
+                    <tr>
+                        <td>47</td>
+                        <td>57</td>
+                        <td>53</td>
+                        <td>50</td>
+                        <td>45</td>
+                        <td>48</td>
+                        <td>52</td>
+                        <td>49</td>
+                        <td>55</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Setelah diurutkan, data di atas dapat dituliskan kembali menjadi </p>
+        <div class="table-responsive-sm">
+            <table class="table table-hover table-bordered">
+                <caption><strong>Tabel</strong> data berat badan siswa setelah diurutkan</caption>
+                <tbody>
+                    <tr>
+                        <td>45</td>
+                        <td>47</td>
+                        <td>48</td>
+                        <td>49</td>
+                        <td>50</td>
+                        <td>52</td>
+                        <td>53</td>
+                        <td>55</td>
+                        <td>57</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <ol type="a">
+            <li>Berapakah banyaknya data berat badan siswa laki-laki kelas VIII D SMP Ceria di atas?</li>
+            <li>Apakah banyaknya data tersebut termasuk ke dalam bilangan ganjil atau bilangan genap?</li>
+            <li>Setelah data tersebut diurutkan, menurutmu data ke berapa yang terdapat pada posisi/urutan paling tengah
+                dari seluruh data yang ada?</li>
+            <li>Jika nilai dari data yang terletak pada posisi tengah dari kumpulan data berat badan siswa di atas
+                disebut dengan median, berapakah nilainya?</li>
+            <li>Bagaimana caramu menentukan data yang berada pada posisi tengah dari sekumpulan data yang terurut
+                tersebut?</li>
+        </ol>
+
+        <p>Selain dengan mengurutkan suatu data dari data terkecil ke data terbesar, kita juga bisa menentukan median
+            dan modus sekaligus dengan menggunakan plot. Perhatikan kembali tabel presiden dan wakil presiden Indonesia
+            dari masa ke masa. Bagaimana cara kita menentukan median dan modus usia presiden dan wakil presiden saat
+            pertama kali dilantik? Amati langkah yang dibuat Imelda berikut.</p>
+
+        <br>
+
+        <p>Imelda menyusun usia semua presiden dan wakil presiden ke bentuk diagram yang membuatnya mudah untuk
+            mengamati usia presiden dan wakil presiden saat pertama kali dilantik.</p>
+
+        <br>
+
+        <p>Imelda membuat plot usia presiden dan wakil presiden seperti berikut.</p>
+        <img src="/assets/img_plot_usia_presiden_01.png" class="img-fluid" alt="Gambar Plot Usia Presiden">
+
+        <p>Apa yang kalian dapatkan dari diagram di atas? Mudah bukan untuk menentukan usia yang sering muncul.
+            Berapakah modus dari usia presiden dan wakil presiden Indonesia saat pertama kali dilantik?</p>
+
+        <br>
+        <p>Bagaimanakah menentukan median dari diagram yang dibuat Imelda? Amati langkah-langkah yang dilakukan Imelda
+            selanjutnya.</p>
+
+        <br>
+
+        <p>Imelda membagi data yang sudah berbentuk plot menjadi dua.</p>
+        <img src="/assets/img_plot_usia_presiden_02.png" class="img-fluid" alt="Gambar Plot Usia Presiden">
+
+        <p>Kemudian Imelda menentukan mediannya sebagai berikut.</p>
+
+        <p>$$Median = \frac{(59+59)}{2} = 59$$</p>
+
+        <p>Jadi, median dari usia presiden dan wakil presiden saat pertama kali dilantik adalah 59 tahun.</p>
+
+
+    </div>
+
+    <script src="/bootstrap/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="/bootstrap/js/popper.min.js" crossorigin="anonymous"></script>
+        <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!-- MathJax for Math Equation -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                  TeX: {extensions: ["AMSmath.js","AMSsymbols.js","mhchem.js","noErrors.js","noUndefined.js"]},
+                  tex2jax: {
+                      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                      processEscapes: true
+                    },
+                });
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Contoh 9.6</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Contoh 9.6</h5>
+
+        <img src="/assets/img_soal_contoh_96.png" class="img-fluid" alt="Gambar Contoh Soal 9.6"><br>
+        <br>
+        <p>Tentukan mean, median, dan modus dari harga sepatu-sepatu di samping.
+        </p>
+
+        <p>
+            <a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Alternatif Penyelesaian
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <p>Nilai mean, median, dan modus dari harga sepatu- sepatu di atas adalah sebagai berikut.</p>
+                <img src="/assets/img_penyelesaian_contoh_96_1.png" class="img-fluid"
+                    alt="Penyelesaian Contoh 9.6 Poin Mean">
+                <br>
+                <p> <strong>\(Mean\)</strong> harga sepatu di atas adalah \(Rp.485.000,00\).
+                </p>
+
+                <p><strong>\(Median\)</strong> adalah nilai yang letaknya di tengah setelah data diurutkan, yaitu
+                    200.000, 200.000, 310.000, <strong><span class="text-danger">370.000, 450.000,</span></strong>
+                    480.000, 650.000, 1.220.000. Karena banyak data genap, maka median adalah rata-rata data ke-4 dan
+                    ke-5, yaitu</p>
+
+                <p>$$\frac{370.000+450.000}{2}=410.000$$</p>
+
+                <p><strong>\(Modus\)</strong> dari harga sepatu di atas adalah Rp.200.000,00, karena harga tersebut
+                    muncul dua kali dan yang lainnya muncul sekali.</p>
+
+                <img src="/assets/img_penyelesaian_contoh_96_2.png" class="img-fluid"
+                    alt="Penyelesaian Contoh 9.6 Poin Modus">
+                <br>
+                <p>Untuk masalah ini, \(median\) lebih sesuai untuk merepresentasikan data. Perhatikan bahwa \(modus\)
+                    kurang dari hampir seluruh data dan \(mean\) lebih dari hampir semua data.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/bootstrap/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- MathJax for Math Equation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+                  TeX: {extensions: ["AMSmath.js","AMSsymbols.js","mhchem.js","noErrors.js","noUndefined.js"]},
+                  tex2jax: {
+                      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                      processEscapes: true
+                    },
+                });
+        </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>
