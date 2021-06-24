@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <title>Ayo Kita Menanya</title>
+</head>
+
+<body>
+
+    <div class="container pt-4">
+        <h5 class="span-bold">Ayo Kita Menanya</h5>
+        <p>Bagaimanakah diagram di atas membantu kita untuk menyajikan suatu data? Bagaimanakah menentukan jangkauan dari suatu data? Bagaimana cara menentukan letak kuartil I dan kuartil III? Bagaimana menentukan letak kuartil jika data yang diberikan berupa tabel frekuensi?</p>
+
+        <p>Buatlah pertanyaan yang terkait dengan diagram di atas, kemudian ajukan pertanyaan yang telah kalian buat kepada guru kalian.</p>
+
+    </div>
+
+    <script src="/bootstrap/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!-- MathJax for Math Equation -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            CommonHTML: { linebreaks: { automatic: true } },
+            "HTML-CSS": { linebreaks: { automatic: true } },
+                   SVG: { linebreaks: { automatic: true } }
+        });
+      window.addEventListener('resize', MJrerender);
+
+      let t = -1;
+      let delay = 1000;
+      function MJrerender() {
+        if (t >= 0) {
+          // If we are still waiting, then the user is still resizing =>
+          // postpone the action further!
+          window.clearTimeout(t);
+        }
+        t = window.setTimeout(function() {
+          MathJax.Hub.Queue(["Rerender",MathJax.Hub]);
+          t = -1; // Reset the handle
+        }, delay);
+      };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_SVG-full"></script>
+</body>
+
+</html>

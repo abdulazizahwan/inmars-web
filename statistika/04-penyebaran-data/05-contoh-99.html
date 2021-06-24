@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/style.css" type="text/css">
+  <title>Contoh 9.9</title>
+</head>
+
+<body>
+
+  <div class="container pt-4">
+    <h5 class="span-bold">Contoh 9.9</h5>
+    <p>Tabel di bawah menunjukkan panjang beberapa ular sanca (python). Tentukan jangkauan dari panjang ular sanca.</p>
+
+    <div class="table-responsive-sm">
+      <table class="table table-hover table-bordered">
+        <caption><strong>Tabel</strong> Panjang (kaki) ular sanca (python)</caption>
+        <tbody>
+          <tr>
+            <td>18.5</td>
+            <td>11</td>
+            <td>14</td>
+            <td>12.5</td>
+            <td>16.25</td>
+            <td>8</td>
+            <td>10</td>
+            <td>15.5</td>
+            <td>6.25</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        Alternatif Penyelesaian
+      </a>
+    </p>
+    <div class="collapsed" id="collapseExample">
+      <div class="card card-body">
+        <p>
+          Untuk menentukan nilai terkecil dan terbesar, urutkan data terlebih dahulu dari data yang terkecil ke yang
+          terbesar.
+        </p>
+
+        <p>\(5, 6.25, 8, 10, 11, 12.5, 14, 15.5, 16.25, 18.5\)</p>
+
+        <p>Nilai terkecil adalah \(5\). Nilai terbesar adalah \(18,5\).</p>
+
+        <p>Jadi, \(jangkauan\) dari panjang ular sanca adalah \(18,5 – 5 = 13,5\) kaki.</p>
+
+        <p>\(Kuartil\) dari kumpulan data membagi data menjadi empat bagian yang sama. Ingat bahwa \(median\space
+          (kuartil\space II)\) membagi data menjadi dua bagian yang sama.</p>
+
+        <img src="/assets/img_penyelesaian_contoh_99_1.png" alt="Gambar Penyelesaian Contoh 9.9" class="img-fluid">
+
+        <br>
+        <p>Selisih antara kuartil atas dan kuartil bawah disebut \(jangkauan\space interkuartil\). \(Jangkauan\space
+          interkuartil\) ini juga merupakan salah satu ukuran penyebaran data.</p>
+
+        <img src="/assets/img_penyelesaian_contoh_99_2.png" alt="Gambar Penyelesaian Contoh 9.9" class="img-fluid">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/bootstrap/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="/bootstrap/js/popper.min.js" crossorigin="anonymous"></script>
+  <script src="/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <!-- MathJax for Math Equation -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            CommonHTML: { linebreaks: { automatic: true } },
+            "HTML-CSS": { linebreaks: { automatic: true } },
+                   SVG: { linebreaks: { automatic: true } }
+        });
+      window.addEventListener('resize', MJrerender);
+
+      let t = -1;
+      let delay = 1000;
+      function MJrerender() {
+        if (t >= 0) {
+          // If we are still waiting, then the user is still resizing =>
+          // postpone the action further!
+          window.clearTimeout(t);
+        }
+        t = window.setTimeout(function() {
+          MathJax.Hub.Queue(["Rerender",MathJax.Hub]);
+          t = -1; // Reset the handle
+        }, delay);
+      };
+      </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_SVG-full"></script>
+</body>
+
+</html>
